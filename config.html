@@ -1,0 +1,23 @@
+<center>
+  <a href="<?php echo $CFG->wwwroot;?>/enrol/moderated/show_requests.php">
+    <?php  print_string('showapplications','enrol_moderated') ?>
+  </a>
+</center>
+<table cellspacing="0" cellpadding="5" border="0" class="boxaligncenter">
+
+<tr>
+    <td align="right">enrol_moderated_moderatoremail:</td>
+    <td>
+<?php
+    $choices = array();
+    $choices['0'] = get_string('no');
+    $choices['1'] = get_string('yes');
+    print_textfield ('enrol_moderated_moderatoremail', $frm->enrol_moderated_moderatoremail,'',20);
+?>
+    </td><td>
+    <?php  print_string('enrol_moderated_moderatoremail', 'enrol_moderated') ?>
+    </td>
+</tr>
+
+
+</table>
